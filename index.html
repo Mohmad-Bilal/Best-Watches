@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body class="pt-5 bg-secondary bg-opacity-50">
+
+    <nav
+      class="navbar bg-dark navbar-expand-lg bg-body-tertiary fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logo.avif"
+            alt="Logo"
+            width="50px"
+            height="50px"
+            class="d-inline rounded-circle me-2"
+          />
+          Best Watches
+        </a>
+        <div class="vr ms-0 me-2 bg-light d-none d-lg-block"></div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#smallHeader"
+          aria-controls="smallHeader"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="smallHeader">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link focus-ring py-1 px-1 rounded-2 me-2"
+                style="
+                  --bs-focus-ring-color: rgba(var(--bs-light-rgb), 0.5);
+                  --bs-focus-ring-width: 2px;
+                "
+                href="#"
+                > <span class="navbar-animation">HOME</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link focus-ring py-1 px-1 rounded-2 me-2"
+                style="
+                  --bs-focus-ring-color: rgba(var(--bs-light-rgb), 0.5);
+                  --bs-focus-ring-width: 2px;
+                "
+                href="#"
+                ><span class="navbar-animation">ABOUT US</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle focus-ring py-1 px-1 rounded-2 me-2"
+                style="
+                  --bs-focus-ring-color: rgba(var(--bs-light-rgb), 0.5);
+                  --bs-focus-ring-width: 2px;
+                "
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                href="#"
+                ><span class="navbar-animation"><span class="text-primary"> M</span>ENU</span> </a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Wall Clocks</a></li>
+                <li><a href="#" class="dropdown-item">Hand Watch</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a href="#" class="dropdown-item">Men Watch</a></li>
+                <li><a href="#" class="dropdown-item">Women Watch</a></li>
+                <li><a href="#" class="dropdown-item">Custom Made</a></li>
+                <li><a href="#" class="dropdown-item">Luxury Watch</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link focus-ring py-1 px-1 rounded-2 me-2"
+                style="
+                  --bs-focus-ring-color: rgba(var(--bs-light-rgb), 0.5);
+                  --bs-focus-ring-width: 2px;
+                "
+                href="#"
+                ><span class="navbar-animation">CONTACT US</span></a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-light me-2" type="submit">Search</button>
+            <button
+              class="btn btn-outline-primary me-2 text-nowrap"
+              data-bs-toggle="modal"
+              data-bs-target="#logIn"
+              type="submit"
+            >
+              Log in
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class= " position-fixed end-0 top-50 translate-middle-y z-3 me-2" style="height: auto;">
+      <a href="#" class=" text-primary text-decoration-none  d-block my-3 opacity-50" ><i class="fab fa-facebook-square side-icons"></i></a>
+      <a href="#" class=" text-primary text-decoration-none  d-block my-3 opacity-50" ><i class="fab fa-twitter-square side-icons"></i></a>
+      <a href="#" class=" text-primary text-decoration-none  d-block my-3 opacity-50" ><i class="fab fa-whatsapp-square side-icons"></i></a>
+      <a href="#" class=" text-primary text-decoration-none  d-block my-3 opacity-50" ><i class="fab fa-instagram-square side-icons"></i></a>
+      <a href="#" class=" text-primary text-decoration-none  d-block my-3 opacity-50" ><i class="fab fa-linkedin side-icons"></i></a>
+    </div>
+
+
+
+
+
+
+    <!-- Log in Modal -->
+    <div
+      class="modal fade"
+      id="logIn"
+      tabindex="-1"
+      aria-labelledby="logInForm"
+      aria-hidden="true"
+      data-bs-theme="dark"
+    >
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-2 fst-italic" id="logInForm">Log in</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter your email"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Enter your password"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Remember me</label
+                >
+              </div>
+            </form>
+            <button type="button" class="btn btn-outline-primary w-100">
+              Log in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel slide" id="wallpaperSlid">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#WallpaperSlid"
+          data-bs-slide-to="0"
+          aria-label="Slide 1"
+          class="active"
+          aria-current="true"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#WallpaperSlid"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#WallpaperSlid"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#WallpaperSlid"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/photo1.jpg"
+            alt="bg-Watch"
+            class="d-block w-100 object-fit-cover"
+            style="height: 650px"
+          />
+          <div
+            class="carousel-caption d-none d-sm-block bg-secondary bg-opacity-25 mb-4 border border-light rounded-2"
+          >
+            <h5>Ocean Blue</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button type="button" class="btn btn-outline-primary text-nowrap">
+              Call Us
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/photo2.jpg"
+            alt="bg-Watch"
+            class="d-block w-100 object-fit-cover"
+            style="height: 650px"
+          />
+          <div
+            class="carousel-caption d-none d-sm-block bg-secondary bg-opacity-25 mb-4 border border-light rounded-2"
+          >
+            <h5>Gold And Silver</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button type="button" class="btn btn-outline-primary text-nowrap">
+              Call Us
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/photo3.jpg"
+            alt="bg-Watch"
+            class="d-block w-100 object-fit-cover"
+            style="height: 650px"
+          />
+          <div
+            class="carousel-caption d-none d-sm-block bg-secondary bg-opacity-25 mb-4 border border-light rounded-2"
+          >
+            <h5>Night Black</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button type="button" class="btn btn-outline-primary text-nowrap">
+              Call Us
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/photo7.jpg"
+            alt="bg-Watch"
+            class="d-block w-100 object-fit-cover"
+            style="height: 650px"
+          />
+          <div
+            class="carousel-caption d-none d-sm-block bg-secondary bg-opacity-25 mb-4 border border-light rounded-2"
+          >
+            <h5>Complex Mechanic</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button type="button" class="btn btn-outline-primary text-nowrap">
+              Call Us
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#wallpaperSlid"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#wallpaperSlid"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container-fluid text-bg-secondary py-4">
+      <h3 class="text-dark">Welcome</h3>
+      <p class="text-dark">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+        commodi dolore animi, cupiditate ullam neque perferendis, hic, deserunt
+        aliquam ipsam sed quaerat blanditiis autem officiis velit fugit?
+        Numquam, ducimus nesciunt.
+      </p>
+      <button class="btn btn-primary">Learn More</button>
+    </div>
+
+    <hr class="" />
+
+    <div class="container-fluid text-center py-5 bg-dark fst-italic rounded">
+      <h2 class="text-light">The Most famous watches of all time</h2>
+    </div>
+
+    <div class="rounded-2" data-bs-theme="">
+      <div class="accordion mt-5 rounded" id="watchesType">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-secondary text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h4 class="fst-italic">Men Clocks</h4>
+            </button>
+          </h2>
+          <div
+            class="accordion-collapse collapse"
+            id="collapseOne"
+            data-bs-parent="#watchesType"
+          >
+            <div class="accordion-body bg-secondary bg-opacity-25">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
+                velit sapiente cum veritatis corporis repellendus exercitationem
+                facere iste tempora architecto? Earum velit, officia ipsam
+                dolores facilis enim debitis sapiente assumenda?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-secondary text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <h4 class="fst-italic">Women Clocks</h4>
+            </button>
+          </h2>
+          <div
+            class="accordion-collapse collapse"
+            id="collapseTwo"
+            data-bs-parent="#watchesType"
+          >
+            <div class="accordion-body bg-secondary bg-opacity-25">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
+                velit sapiente cum veritatis corporis repellendus exercitationem
+                facere iste tempora architecto? Earum velit, officia ipsam
+                dolores facilis enim debitis sapiente assumenda?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-secondary text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <h4 class="fst-italic">Wall Clock</h4>
+            </button>
+          </h2>
+          <div
+            class="accordion-collapse collapse bg-secondary bg-opacity-25"
+            id="collapseThree"
+            data-bs-parent="#watchesType"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
+                velit sapiente cum veritatis corporis repellendus exercitationem
+                facere iste tempora architecto? Earum velit, officia ipsam
+                dolores facilis enim debitis sapiente assumenda?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="" />
+    <div class="container-fluid text-center bg-dark fst-italic rounded py-4">
+      <h2 class="text-light">Translate From Arabic To English</h2>
+    </div>
+    <div class="container-fluid bg-secondary py-3">
+      <h4 class="text-light">
+        Write and Translate <span class="text-primary">Press Here</span>
+      </h4>
+      <button
+        class="btn btn-primary"
+        data-bs-target="#Copy!"
+        type="button"
+        data-bs-toggle="modal"
+      >
+        Copy
+      </button>
+      <textarea
+        name=""
+        id=""
+        class="d-block my-3 w-100 rounded px-5"
+        rows="3"
+        cols="15"
+        style="height: 125px"
+      >
+  translate:
+
+</textarea
+      >
+    </div>
+
+    <hr class="" />
+    <div class="container-fluid text-center bg-dark fst-italic rounded py-4">
+      <h2 class="text-light">Translate From Arabic To French</h2>
+    </div>
+    <div class="container-fluid bg-secondary py-3">
+      <h4 class="text-light">
+        Write and Translate <span class="text-primary">Press Here</span>
+      </h4>
+      <button
+        id="copiedBtn"
+        class="btn btn-primary"
+        data-bs-target="#Copy!"
+        type="button"
+        data-bs-toggle="modal"
+      >
+        Copy
+      </button>
+      <textarea
+        name=""
+        id=""
+        class="d-block my-3 w-100 rounded px-5"
+        rows="3"
+        cols="15"
+        style="height: 125px"
+      >
+  translate:
+
+</textarea
+      >
+    </div>
+    <hr class="" />
+    <div class="container-fluid text-center bg-dark fst-italic rounded py-4">
+      <h2 class="text-light">Translate From Arabic To German</h2>
+    </div>
+    <div class="container-fluid bg-secondary py-3">
+      <h4 class="text-light">
+        Write and Translate <span class="text-primary">Press Here</span>
+      </h4>
+      <button
+        class="btn btn-primary"
+        data-bs-target="#Copy!"
+        type="button"
+        data-bs-toggle="modal"
+      >
+        Copy
+      </button>
+      
+      <textarea
+        name=""
+        id=""
+        class="d-block my-3 w-100 rounded px-5"
+        rows="3"
+        cols="15"
+        style="height: 125px"
+      >
+  translate:
+
+</textarea
+      >
+    </div>
+
+    <div
+      class="modal fade"
+      id="Copy!"
+      tabindex="-1"
+      aria-labelledby="CopyText"
+      aria-hidden="true"
+      data-bs-theme="dark"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="CopyText" aria-hidden="true">
+              Attention!!
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>the message has been copied !!</p>
+            <button
+            id="okBtn"
+              type="button"
+              class="btn btn-secondary float-end"
+              data-bs-dismiss="modal"
+            >
+              Ok
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="" />
+
+    <div
+      class="container-fluid custom-fixed-background"
+      style="height: 400px"
+    ></div>
+
+    <div
+      class="container-fluid text-center py-4 my-5 bg-dark fst-italic rounded"
+    >
+      <h2 class="text-light">Popular Watches In Our Store</h2>
+    </div>
+    <div class="container py-3 m-auto row mb-5 ">
+      <div class="col col-sm-12 col-md-6 col-lg-4 m-auto mb-5">
+        <div
+          class="card container  custom-shadow custom-hover"
+          data-bs-theme="dark"
+        >
+          <img src="images/product1.avif" class="card-img-top" alt="product" />
+          <div class="card-body text-end">
+            <h5 class="card-title text-start">Card title</h5>
+
+            <a href="#" class="btn btn-primary text-end my-3">Go somewhere</a>
+            <p class="card-text text-start">
+              Some quick example text to build on the card title and make up the
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-12  col-md-6 col-lg-4 m-auto mb-5">
+        <div
+          class="card container custom-shadow custom-hover"
+          data-bs-theme="dark"
+        >
+          <img src="images/product2.webp" class="card-img-top" alt="product" />
+          <div class="card-body text-end">
+            <h5 class="card-title text-start">Card title</h5>
+
+            <a href="#" class="btn btn-primary text-end my-3">Go somewhere</a>
+            <p class="card-text text-start">
+              Some quick example text to build on the card title and make up the
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-6 col-lg-4 m-auto mb-5">
+        <div
+          class="card container   custom-shadow custom-hover"
+          data-bs-theme="dark"
+        >
+          <img src="images/product3.jpg" class="card-img-top" alt="product" />
+          <div class="card-body text-end">
+            <h5 class="card-title text-start">Card title</h5>
+
+            <a href="#" class="btn btn-primary text-end my-3">Go somewhere</a>
+            <p class="card-text text-start">
+              Some quick example text to build on the card title and make up the
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-6 col-lg-4 m-auto mb-5">
+        <div
+          class="card container  custom-shadow custom-hover"
+          data-bs-theme="dark"
+        >
+          <img src="images/product4.avif" class="card-img-top" alt="product" />
+          <div class="card-body text-end">
+            <h5 class="card-title text-start">Card title</h5>
+
+            <a href="#" class="btn btn-primary text-end my-3">Go somewhere</a>
+            <p class="card-text text-start">
+              Some quick example text to build on the card title and make up the
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-6 col-lg-4 m-auto mb-5">
+        <div
+          class="card container custom-shadow custom-hover"
+          data-bs-theme="dark"
+        >
+          <img src="images/product5.webp" class="card-img-top" alt="product" />
+          <div class="card-body text-end">
+            <h5 class="card-title text-start">Card title</h5>
+
+            <a href="#" class="btn btn-primary text-end my-3">Go somewhere</a>
+            <p class="card-text text-start">
+              Some quick example text to build on the card title and make up the
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-6 col-lg-4 m-auto mb-5">
+        <div
+          class="card container custom-shadow custom-hover"
+          data-bs-theme="dark"
+        >
+          <img src="images/product6.webp" class="card-img-top" alt="product" />
+          <div class="card-body text-end">
+            <h5 class="card-title text-start">Card title</h5>
+
+            <a href="#" class="btn btn-primary text-end my-3">Go somewhere</a>
+            <p class="card-text text-start">
+              Some quick example text to build on the card title and make up the
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-6 col-lg-4 m-auto mb-5">
+        <div
+          class="card container custom-shadow custom-hover"
+          data-bs-theme="dark"
+        >
+          <img src="images/product7.jpg" class="card-img-top" alt="product" />
+          <div class="card-body text-end">
+            <h5 class="card-title text-start">Card title</h5>
+
+            <a href="#" class="btn btn-primary text-end my-3">Go somewhere</a>
+            <p class="card-text text-start">
+              Some quick example text to build on the card title and make up the
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-6 col-lg-4 m-auto mb-5">
+        <div
+          class="card container custom-shadow custom-hover"
+          data-bs-theme="dark"
+        >
+          <img src="images/product8.webp" class="card-img-top" alt="product" />
+          <div class="card-body text-end">
+            <h5 class="card-title text-start">Card title</h5>
+
+            <a href="#" class="btn btn-primary text-end my-3">Go somewhere</a>
+            <p class="card-text text-start">
+              Some quick example text to build on the card title and make up the
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container-fluid custom-fixed-background"
+      style="height: 400px"
+    ></div>
+
+    <div
+      class="container-fluid text-center py-4 my-5 bg-dark fst-italic rounded"
+    >
+      <h2 class="text-light">..Thanks For..</h2>
+    </div>
+
+    <div class="container row m-auto justify-content-center my-5">
+      <div class="col col-sm-12 col-md-4 my-4 custom-people-hover1">
+        <div
+          class="card custom-background-card1 rounded-5 m-auto"
+          style="width: 18rem"
+          data-bs-theme="dark"
+        >
+          <div class="bg-dark bg-opacity-50 rounded-5 custom-people-hover2">
+            <div class="mb-5 container py-3">
+              <h5>All Thanks And Appreciation</h5>
+              <p class="mb-5"><i class="far fa-clock"></i>December 8. 2024</p>
+            </div>
+
+            <img
+              src="images/person1.jpg"
+              alt=""
+              style="height: 150px; width: 100px"
+              class="mx-3 rounded-pill border border-light"
+            />
+            <p class="px-3 mb-4">
+              Eng.Abd Alrahim Kwt <br />
+              <span>Eng.Director Of UI/UX</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-4 my-4 custom-people-hover1">
+        <div
+          class="card custom-background-card2 rounded-5 m-auto"
+          style="width: 18rem"
+          data-bs-theme="dark"
+        >
+          <div class="bg-dark bg-opacity-50 rounded-5 custom-people-hover2">
+            <div class="mb-5 container py-3">
+              <h5>All Thanks And Appreciation</h5>
+              <p class="mb-5"><i class="far fa-clock"></i>December 8. 2024</p>
+            </div>
+
+            <img
+              src="images/person2.jpg"
+              alt=""
+              style="height: 150px; width: 100px"
+              class="mx-3 rounded-pill border border-light"
+            />
+            <p class="px-3 mb-4">
+              Eng.Hamze Mussallim <br />
+              <span>Content Creator</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-12 col-md-4 my-4 custom-people-hover1">
+        <div
+          class="card custom-background-card3 rounded-5 m-auto"
+          style="width: 18rem"
+          data-bs-theme="dark"
+        >
+          <div class="bg-dark bg-opacity-50 rounded-5 custom-people-hover2">
+            <div class="mb-5 container py-3">
+              <h5>All Thanks And Appreciation</h5>
+              <p class="mb-5"><i class="far fa-clock"></i>December 8. 2024</p>
+            </div>
+
+            <img
+              src="images/person3.webp"
+              alt=""
+              style="height: 150px; width: 100px"
+              class="mx-3 rounded-pill border border-light"
+            />
+            <p class="px-3 mb-4">
+              Eng.Mohamad Bilal <br />
+              <span>Web Developer</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center my-5 pt-5 ">
+      <h1 class="text-primary"><b>Our Store Events</b></h1>
+    </div>
+
+    <div class="container pt-5 m-auto pb-3">
+      <div class="custom-shadow card m-auto mt-5 mb-4 " data-bs-theme="dark">
+        <div class="row text-start">
+          <div class="col-md-8 order-2 order-md-1 pt-2 ">
+            <div class="card-body ps-4 ">
+              <h3 class="fst-italic">Card Title</h3>
+              <span class="text-secondary">Sun, Dec 8, 2024</span>
+              <div
+                class="progress mx-2 my-3"
+                role="progressbar"
+                aria-label="Animated striped example"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 75px; height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped progress-bar-animated"
+                  style="width: 50%"
+                ></div>
+              </div>
+              <p class="text-start mb-5" style="max-width: 875px">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.dasdasdsads Errorassumenda accusamus reiciendis quo eius,
+                eligendi perspiciatis aut cumque ea praesentium debitis eveniet
+                aspernatur, minus blanditiis incidunt voluptas culpa
+                dignissimos! Autem. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Reiciendis facilis quia ratione optio quo
+                velit, quibusdam pariatur culpa veritatis nostrum dolores ullam
+                iste dicta consequuntur deleniti repellendus quod in harum?
+              </p>
+              <div class="pt-5">
+              <button class="btn btn-primary"><i class="fas fa-microphone-alt"></i> Podcast</button>
+              <button class="btn btn-primary"><i class="far fa-clock"></i> 43 mins</button>
+              <button class="btn btn-primary"><i class="fas fa-play"></i></i> play Episode</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-12 d-flex justify-content-md-end align-items-center order-1 order-md-2 w-sm-100 px-4"
+          >
+            <img
+              src="images/eventPic1.jpg"
+              alt=""
+              class="img-fluid cliping-photo-right"
+              style="width: 350px; min-width: 100%; height: 100%"
+            />
+          </div>
+
+          
+        </div>
+      </div>
+            <div class="custom-shadow card m-auto mt-5 mb-4" data-bs-theme="dark">
+        <div class="row text-start mx-auto">
+                    <div
+            class="col-md-4 col-12 d-flex justify-content-md-end align-items-center order-1 order-md-1 w-sm-100   "
+          >
+            <img
+              src="images/eventPic2.jpg"
+              alt=""
+              class="img-fluid cliping-photo-left"
+              style="width: 350px; min-width: 100%; height: 100%"
+            />
+          </div>
+          <div class="col-md-8 order-2 order-md-2 pt-2 ">
+            <div class="card-body ps-2">
+              <h3 class="fst-italic">Card Title</h3>
+              <span class="text-secondary">Sun, Dec 8, 2024</span>
+              <div
+                class="progress mx-2 my-3"
+                role="progressbar"
+                aria-label="Animated striped example"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 75px; height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped progress-bar-animated"
+                  style="width: 50%"
+                ></div>
+              </div>
+              <p class="text-start mb-5" style="max-width: 875px">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.dasdasdsads Errorassumenda accusamus reiciendis quo eius,
+                eligendi perspiciatis aut cumque ea praesentium debitis eveniet
+                aspernatur, minus blanditiis incidunt voluptas culpa
+                dignissimos! Autem. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Reiciendis facilis quia ratione optio quo
+                velit, quibusdam pariatur culpa veritatis nostrum dolores ullam
+                iste dicta consequuntur deleniti repellendus quod in harum?
+              </p>
+              <div class="pt-5">
+              <button class="btn btn-primary"><i class="fas fa-microphone-alt"></i> Podcast</button>
+              <button class="btn btn-primary"><i class="far fa-clock"></i> 43 mins</button>
+              <button class="btn btn-primary"><i class="fas fa-play"></i></i> play Episode</button>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+
+          
+        </div>
+      </div>
+            <div class="custom-shadow card m-auto mt-5 mb-4" data-bs-theme="dark">
+        <div class="row text-start ">
+          <div class="col-md-8 order-2 order-md-1 pt-2">
+            <div class="card-body ps-4">
+              <h3 class="fst-italic">Card Title</h3>
+              <span class="text-secondary">Sun, Dec 8, 2024</span>
+              <div
+                class="progress mx-2 my-3"
+                role="progressbar"
+                aria-label="Animated striped example"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 75px; height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped progress-bar-animated"
+                  style="width: 50%"
+                ></div>
+              </div>
+              <p class="text-start mb-5" style="max-width: 875px">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.dasdasdsads Errorassumenda accusamus reiciendis quo eius,
+                eligendi perspiciatis aut cumque ea praesentium debitis eveniet
+                aspernatur, minus blanditiis incidunt voluptas culpa
+                dignissimos! Autem. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Reiciendis facilis quia ratione optio quo
+                velit, quibusdam pariatur culpa veritatis nostrum dolores ullam
+                iste dicta consequuntur deleniti repellendus quod in harum?
+              </p>
+              <div class="pt-5">
+              <button class="btn btn-primary"><i class="fas fa-microphone-alt"></i> Podcast</button>
+              <button class="btn btn-primary"><i class="far fa-clock"></i> 43 mins</button>
+              <button class="btn btn-primary"><i class="fas fa-play"></i></i> play Episode</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-12 d-flex justify-content-md-end align-items-center order-1 order-md-2 w-sm-100 px-4"
+          >
+            <img
+              src="images/eventPic3.jpg"
+              alt=""
+              class="img-fluid cliping-photo-right"
+              style="width: 350px; min-width: 100%; height: 100%"
+            />
+          </div>  
+        </div>
+      </div>
+            <div class="custom-shadow card m-auto mt-5 mb-4" data-bs-theme="dark">
+        <div class="row text-start m-auto">
+                    <div
+            class="col-md-4 col-12 d-flex justify-content-md-end align-items-center order-1 order-md-1 w-sm-100 "
+          >
+            <img
+              src="images/eventPic4.jpg"
+              alt=""
+              class="img-fluid cliping-photo-left"
+              style="width: 350px; min-width: 100%; height: 100%"
+            />
+          </div>
+          <div class="col-md-8 order-2 order-md-2 pt-2 ">
+            <div class="card-body ps-2 ">
+              <h3 class="fst-italic">Card Title</h3>
+              <span class="text-secondary">Sun, Dec 8, 2024</span>
+              <div
+                class="progress mx-2 my-3"
+                role="progressbar"
+                aria-label="Animated striped example"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 75px; height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped progress-bar-animated"
+                  style="width: 50%"
+                ></div>
+              </div>
+              <p class="text-start mb-5" style="max-width: 875px">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.dasdasdsads Errorassumenda accusamus reiciendis quo eius,
+                eligendi perspiciatis aut cumque ea praesentium debitis eveniet
+                aspernatur, minus blanditiis incidunt voluptas culpa
+                dignissimos! Autem. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Reiciendis facilis quia ratione optio quo
+                velit, quibusdam pariatur culpa veritatis nostrum dolores ullam
+                iste dicta consequuntur deleniti repellendus quod in harum?
+              </p>
+              <div class="pt-5">
+              <button class="btn btn-primary"><i class="fas fa-microphone-alt"></i> Podcast</button>
+              <button class="btn btn-primary"><i class="far fa-clock"></i> 43 mins</button>
+              <button class="btn btn-primary"><i class="fas fa-play"></i></i> play Episode</button>
+              </div>
+            </div>
+          </div>    
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="container row m-auto justify-content-center mt-5 pt-5 px-5 " data-bs-theme="dark">
+        <div class="col-sm-12 col-md-3 m-auto ">
+                  <div class="card container m-auto mb-5  custom-shadow subscribe-hover" style="width: 225px;">
+          <img src="images/appPic1.png" alt="" class="m-auto order-2 mb-3" style="width: 150px; height: 150px;" >
+          <div class="card-body m-auto order-1 ">
+            <h5 class="fst-italic">Subscribe Now</h5>
+          </div>
+          <a href="" class="m-auto order-3"><h5>Go To Link</h5></a>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-3 m-auto">
+                  <div class="card m-auto container mb-5 custom-shadow subscribe-hover " style="width: 225px;">
+          <img src="images/appPic2.jpg" alt="" class="m-auto order-2 mb-3" style="width: 150px; height: 150px;" >
+          <div class="card-body m-auto order-1 ">
+            <h5 class="fst-italic">Subscribe Now</h5>
+          </div>
+          <a href="" class="m-auto order-3"><h5>Go To Link</h5></a>
+        </div> 
+        </div>
+        <div class="col-sm-12 col-md-3 m-auto">
+                  <div class="card m-auto container mb-5 custom-shadow subscribe-hover" style="width: 225px;">
+          <img src="images/appPic3.jpg" alt="" class="m-auto order-2 mb-3" style="width: 150px; height: 150px;" >
+          <div class="card-body m-auto order-1 ">
+            <h5 class="fst-italic">Subscribe Now</h5>
+          </div>
+          <a href="" class="m-auto order-3"><h5>Go To Link</h5></a>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-3 m-auto">
+                  <div class="card m-auto container mb-5 custom-shadow subscribe-hover" style="width: 225px;">
+          <img src="images/appPic4.png" alt="" class="m-auto order-2 mb-3" style="width: 150px; height: 150px;" >
+          <div class="card-body m-auto order-1 ">
+            <h5 class="fst-italic">Subscribe Now</h5>
+          </div>
+          <a href="" class="m-auto order-3"><h5>Go To Link</h5></a>
+        </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark pt-5 float-end " data-bs-theme="dark" style="width: 100%; height: auto;">
+      
+      <div class=" row mt-4 border-top border-bottom border-2 m-auto" style="height: auto; width: 100%;">
+        <div class="col-md-4 m-auto text-center container-fluid px-0 ">
+          <img src="images/logo.avif" alt="" class=" rounded-circle my-4" style="width: 125px; height: 125px;">
+          <h1 class="text-light d-md-inline px-2 fst-italic">Good Company</h1>
+          <hr class="text-light d-md-block d-sm-none text-center px-0" style="width: 100%;">
+          <div class="mt-3 ">
+          <span class="text-light d-block my-3">Tel :000-000-000</span>
+          <span class="text-light d-block my-3">Address : Syria</span>
+          <span class="text-light d-block my-3">Fax :000-000-000 </span>
+          </div>
+        </div>
+        <hr class="text-light d-md-none d-sm-block px-0" style="width: 100%;">
+        <div class="col-md-4 m-auto text-center container-fluid px-0">
+          <img src="images/logo.avif" alt="" class=" rounded-circle my-4" style="width: 125px; height: 125px;">
+          <h1 class="text-light d-md-inline px-2 fst-italic">Important Link</h1>
+          <hr class="text-light d-md-block d-sm-none text-center px-0" style="width: 100%;">
+          <div class="mt-3 ">
+          <span class=" d-block my-3"><a class="text-decoration-none" href="">Visit Us</a></span>
+          <span class=" d-block my-3"><a class="text-decoration-none" href="">Yake A Look</a> </span>
+          <span class=" d-block my-3"><a class="text-decoration-none" href="">Your Style Is More Important </a>  </span>
+          </div>
+        </div>
+        <hr class="text-light d-md-none d-sm-block" style="width: 100%;">
+        <div class="col-md-4 m-auto text-center container-fluid px-0">
+          <img src="images/logo.avif" alt="" class=" rounded-circle my-4" style="width: 125px; height: 125px;">
+          <h1 class="text-light d-md-inline px-2 fst-italic">Vision</h1>
+          <hr class="text-light d-md-block d-sm-none text-center px-0" style="width: 100%;">
+          <div class="mt-3 ">
+          <span class="text-light d-block my-3">Service For All</span>
+          <span class="text-light d-block my-3">Provide Best Services</span>
+          <span class="text-light d-block my-3">You Will Be Better Than Before </span>
+          </div>
+        </hr>
+      </div>
+
+      <div class=" container-fluid border-top border-2">
+        <h4 class="d-flex text-primary m-auto my-4 text-center justify-content-center align-items-center">&copy 2025 Watches Store, All Rights Rights, Designed By MOHMAD MOSTAFA BILAL</h4>
+      </div>
+
+
+
+
+    </footer>
+
+
+
+
+    <script src="/js/script.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
